@@ -1,0 +1,7 @@
+{
+  "name": "angularprojecttwitch",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

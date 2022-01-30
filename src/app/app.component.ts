@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Dashboard', url: '/folder/dashboard' },
-    { title: 'Streamer', url: '/folder/streamer' },
-    { title: 'Entreprise', url: '/folder/entreprise' },
-    { title: 'Devis', url: '/folder/devis' },
-    { title: 'Facture', url: '/folder/facture' },
-    { title: 'Catégorie', url: '/folder/categorie'},
+    { title: 'Dashboard', url: '/dasboard' },
+    { title: 'Streamer', url: '/streamer' },
+    { title: 'Entreprise', url: '/entreprise' },
+    { title: 'Devis', url: '/devis' },
+    { title: 'Facture', url: '/facture' },
+    { title: 'Catégorie', url: '/categorie'},
   ];
 }

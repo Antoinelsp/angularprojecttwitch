@@ -37,23 +37,57 @@ ion-title{
   margin-top: 25px;
   font-size: 20px;
 }
-.tri{
-  margin-left: 50%;
-  margin-top: 25px;
-  font-size: 20px;
+.rubrique{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
-.btnadd{
-  align-self:flex-end;
-  margin-left: 5%;
+.case {
+  border: solid 1px;
+  border-color: #6441A5;
+  border-radius: 15px;
+  height: 140px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 25px;
 }
-.btnadd2{
-  align-self: flex-end;
-  width: 100px;
-  height: 50px;
-  background-color: #6441A5;
-  margin-left: 20px;
-  margin-right: 20px;
+.container_tableaux{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 0px;
 }
-ion-item{
-  margin-top: 15px;
+.tableaux{
+  margin: 0px;
+  margin-top: 50px;
+  margin-right: 0px;
+  width: 550px;
+  height: 450px;
+  border: solid 1px;
+  border-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+}
+.graphique{
+  border: solid 1px;
+  border-color: blueviolet;
+  width: 480px;
+  height: 200px;
+}
+.liste_activite{
+  border: solid 1px;
+  border-color: blueviolet;
+  width: 480px;
+  height: 160px;
+}
+.affiliations{
+  border-radius: 15px;
+  background-color: blueviolet;
+  width: 320px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
 }

@@ -1,0 +1,61 @@
+
+ion-content ion-toolbar{
+  padding-right: 5%;
+  display: flex;
+  justify-content: start;
+}
+ion-content ion-toolbar ion-searchbar{
+  width: 350px;
+  margin: 0px;
+  margin-left: 65%;
+}
+ion-content ion-toolbar ion-buttons{
+  align-self: start;
+}
+ion-content ion-toolbar ion-buttons ion-button{
+  width: 50px;
+  height: 50px;
+  background-color: #6441A5;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+ion-title{
+  display: flex;
+  justify-content: start;
+}
+.ligne1{
+  display: flex;
+  padding-right: 1%;
+  justify-content: flex-start;
+  margin: 0px;
+}
+.Dash{
+  width: fit-content;
+  align-self: start;
+  margin: 0px;
+  margin-top: 25px;
+  font-size: 20px;
+}
+.tri{
+  margin-left: 50%;
+  margin-top: 25px;
+  font-size: 20px;
+}
+.btnadd{
+  align-self:flex-start;
+  margin-left: 5%;
+  padding-top: 20px;
+}
+.btnadd2{
+  align-self: flex-end;
+  width: 100px;
+  height: 35px;
+  background-color: #6441A5;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+ion-item{
+  margin-top: 15px;
+}

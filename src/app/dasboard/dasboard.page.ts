@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import sampleData from '../../clients.json';
 
 @Component({
   selector: 'app-dasboard',
@@ -11,5 +12,7 @@ export class DasboardPage implements OnInit {
 
   ngOnInit() {
   }
-
+  
+  datas : any = sampleData;
+  
 }

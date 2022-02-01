@@ -3,6 +3,7 @@ ion-content ion-toolbar{
   padding-right: 5%;
   display: flex;
   justify-content: flex-start;
+  box-shadow: 10px 5px 5px  #b6b6b6;
 }
 ion-content ion-toolbar ion-searchbar{
   width: 350px;
@@ -19,6 +20,8 @@ ion-content ion-toolbar ion-buttons ion-button{
   border-radius: 50%;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 ion-title{
   display: flex;

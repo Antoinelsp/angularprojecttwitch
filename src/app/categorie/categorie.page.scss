@@ -2,7 +2,7 @@
 ion-content ion-toolbar{
   padding-right: 5%;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 ion-content ion-toolbar ion-searchbar{
   width: 350px;
@@ -10,7 +10,7 @@ ion-content ion-toolbar ion-searchbar{
   margin-left: 65%;
 }
 ion-content ion-toolbar ion-buttons{
-  align-self: start;
+  align-self: flex-start;
 }
 ion-content ion-toolbar ion-buttons ion-button{
   width: 50px;

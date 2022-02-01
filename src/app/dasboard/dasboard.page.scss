@@ -1,16 +1,30 @@
 
+
 ion-content ion-toolbar{
   padding-right: 5%;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
+  box-shadow: 10px 5px 5px  #b6b6b6;
 }
-ion-content ion-toolbar ion-searchbar{
+
+  ion-content ion-toolbar ion-searchbar{
   width: 350px;
   margin: 0px;
   margin-left: 65%;
-}
+  margin-top: 5px;
+  padding: 0px;
+ }
+@media screen and (max-width: 1180px) and (orientation: landscape) {
+  ion-content ion-toolbar ion-searchbar{
+  width: 350px;
+  margin: 0px;
+  margin-left: 250px;
+  margin-top: 5px;
+  padding: 0px;
+} }
+
 ion-content ion-toolbar ion-buttons{
-  align-self: start;
+  align-self: flex-start;
 }
 ion-content ion-toolbar ion-buttons ion-button{
   width: 50px;
@@ -19,10 +33,12 @@ ion-content ion-toolbar ion-buttons ion-button{
   border-radius: 50%;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 ion-title{
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .ligne1{
   display: flex;
@@ -32,10 +48,12 @@ ion-title{
 }
 .Dash{
   width: fit-content;
-  align-self: start;
+  align-self: flex-start;
   margin: 0px;
-  margin-top: 25px;
+  margin-top: 40px;
   font-size: 20px;
+  margin-bottom: 30px;
+  margin-left: 135px;
 }
 .rubrique{
   display: flex;
@@ -43,7 +61,7 @@ ion-title{
   justify-content: space-around;
 }
 .case {
-  border: solid 1px;
+  border: solid 3px;
   border-color: #6441A5;
   border-radius: 15px;
   height: 140px;
@@ -65,29 +83,100 @@ ion-title{
   margin-top: 50px;
   margin-right: 0px;
   width: 550px;
-  height: 450px;
-  border: solid 1px;
-  border-color: blueviolet;
+  height: 600px;
   display: flex;
   flex-direction: column;
 }
 .graphique{
   border: solid 1px;
   border-color: blueviolet;
-  width: 480px;
+  width: 550px;
   height: 200px;
 }
 .liste_activite{
-  border: solid 1px;
-  border-color: blueviolet;
-  width: 480px;
-  height: 160px;
+  width: 550px;
+  height: 200px;
 }
 .affiliations{
   border-radius: 15px;
   background-color: blueviolet;
-  width: 320px;
-  height: 440px;
+  width: 450px;
+  height: 800px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding:30px;
+}
+.textfre{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+.graphique{
+  margin-bottom: 10px;
+}
+tr{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  align-items: stretch;
+}
+td{
+  height: 40px;
+}
+.colonne1{
+  width: 400px;
+  font-size: 14px;
+}
+.colonne2{
+  width: 80px;
+  font-size: 14px;
+}
+.colonne3{
+  width: 15px;
+  font-size: 14px;
+}
+#ecartact{
+  margin-bottom: 15px;
+}
+#ecarafil{
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 700px ;
+}
+.btn_etat_valide{
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  background-color: green;
+  margin-left: 20px;
+}
+.btn_etat_invalide{
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  background-color: red;
+  margin-left: 20px;
+}
+.texte_ligne1{
+font-size: 18px;
+font-weight: 550;
+margin: 0px;
+}
+.texte_ligne2{
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0px;
+}
+.texte_ligne3{
+  font-size: 18px;
+  margin: 0px;
+}
+.ligne_grasse{
+  font-size: 16px;
+  font-weight: 600;
+}
+.mise_niveau{
+  width: 100px;
 }

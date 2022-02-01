@@ -38,7 +38,13 @@
         <p style="font-size: 20px; font-weight: 600; margin-right: 5px;">Fréquentation </p>
         <p style="font-size: 14px; font-weight: 600;">(6 derniers mois)</p>
       </div>
-      <div class="graphique"></div>
+      <div class="graphique">
+        <script type="text/javascript" src="clients.json"></script>
+        <script>
+          var mydata = JSON.parse(clients);
+
+        </script>
+      </div>
       <div class="liste_activite">
         <table>
           <thead>

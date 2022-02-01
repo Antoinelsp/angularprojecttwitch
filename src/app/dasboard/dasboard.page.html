@@ -1,12 +1,15 @@
-
 <ion-content>
   <ion-toolbar>
     <ion-searchbar></ion-searchbar>
     <ion-buttons slot="end">
-      <ion-button><ion-icon name="notifications-outline"></ion-icon></ion-button>
+      <ion-button>
+        <ion-icon name="notifications-outline" style="color: white;"></ion-icon>
+      </ion-button>
     </ion-buttons>
     <ion-buttons slot="end">
-      <ion-button><ion-icon name="settings-outline"></ion-icon></ion-button>
+      <ion-button>
+        <ion-icon name="settings-outline" style="color: white;"></ion-icon>
+      </ion-button>
     </ion-buttons>
   </ion-toolbar>
   <div class="ligne1">
@@ -14,31 +17,223 @@
   </div>
   <div class="rubrique">
     <div class="case">
-      <p>Nouveaux streamers</p>
-      <p>+ 58 000</p>
-      <p>cette semaine</p>
+      <p class="texte_ligne1">Nouveaux streamers</p>
+      <p class="texte_ligne2">+ 58 000</p>
+      <p class="texte_ligne3">cette semaine</p>
     </div>
     <div class="case">
-      <p>Devis</p>
-      <p>157</p>
-      <p>aujourd'hui</p>
+      <p class="texte_ligne1">Devis</p>
+      <p class="texte_ligne2">157</p>
+      <p class="texte_ligne3">aujourd'hui</p>
     </div>
     <div class="case">
-      <p>vues moyennes</p>
-      <p>3M4</p>
-      <p>aujourd'hui</p>
+      <p class="texte_ligne1">vues moyennes</p>
+      <p class="texte_ligne2">3M4</p>
+      <p class="texte_ligne3">aujourd'hui</p>
     </div>
   </div>
   <div class="container_tableaux">
     <div class="tableaux">
-      <p>Fréquentation (6 derniers mois)</p>
-      <div class="graphique"></div>
-      <p>Activités récentes</p>
-      <div class="liste_activite"></div>
+      <div class="textfre">
+        <p style="font-size: 20px; font-weight: 600; margin-right: 5px;">Fréquentation </p>
+        <p style="font-size: 14px; font-weight: 600;">(6 derniers mois)</p>
+      </div>
+      <div class="graphique">
+        <script type="text/javascript" src="clients.json"></script>
+        <script>
+          var mydata = JSON.parse(clients);
+
+        </script>
+      </div>
+      <div class="liste_activite">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="3" id="ecartact">Activités récentes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p class="colonne1">Vous avez ajouté Stefantutor à la liste des streamers</p>
+              </td>
+              <td>
+                <p class="colonne2">hier à 10:32</p>
+              </td>
+              <td>
+                <p class="colonne3"></p>
+                <ion-buttons slot="end" class="btn_etat_valide">
+                  <ion-button disabled="true"></ion-button>
+                </ion-buttons>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="colonne1">Vous avez créé un devis pour CocaCola</p>
+              </td>
+              <td>
+                <p class="colonne2">hier à 10:32</p>
+              </td>
+              <td>
+                <p class="colonne3"></p>
+                <ion-buttons slot="end" class="btn_etat_valide">
+                  <ion-button disabled="true"></ion-button>
+                </ion-buttons>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="colonne1">Vous avez ajouté CocaCola à la liste des entreprises</p>
+              </td>
+              <td>
+                <p class="colonne2">hier à 10:32</p>
+              </td>
+              <td>
+                <p class="colonne3"></p>
+                <ion-buttons slot="end" class="btn_etat_valide">
+                  <ion-button disabled="true"></ion-button>
+                </ion-buttons>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="colonne1">Vous avez ajouté StreamerXX à la liste des streamers</p>
+              </td>
+              <td>
+                <p class="colonne2">hier à 10:32</p>
+              </td>
+              <td>
+                <p class="colonne3"></p>
+                <ion-buttons slot="end" class="btn_etat_invalide">
+                  <ion-button disabled="true"></ion-button>
+                </ion-buttons>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
     <div class="tableaux">
       <div class="affiliations">
-        <p>Demandes d'affiliations</p>
+        <table style="color: #ffffff;">
+          <thead>
+            <tr>
+              <th colspan="3" id="ecarafil">Demandes d'affiliations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="margin-bottom: 15px;">
+              <td class="mise_niveau">
+                <p class="colonne1.1" class="ligne_grasse">Pseudo</p>
+              </td>
+              <td class="mise_niveau">
+                <p class="colonne2.2" class="ligne_grasse">Date</p>
+              </td>
+              <td class="mise_niveau">
+                <p class="colonne3.3" class="ligne_grasse">N°</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="mise_niveau">
+                <p class="colonne1.1">Choufel</p>
+              </td>
+              <td class="mise_niveau">
+                <p class="colonne2.2">1er Sept</p>
+              </td>
+              <td class="mise_niveau">
+                <p class="colonne3.3">589 456</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="mise_niveau">
+                <p class="colonne1.1">CarzyNutzy</p>
+              </td>
+              <td class="mise_niveau">
+                <p class="colonne2.2">1er Sept</p>
+              </td>
+              <td class="mise_niveau" >
+                <p class="colonne3.3">158 448</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="mise_niveau">
+                <p class="colonne1.1">Stefantutor</p>
+              </td>
+              <td class="mise_niveau">
+                <p class="colonne2.2">10 août</p>
+              </td>
+              <td class="mise_niveau">
+                <p class="colonne3.3"></p>468 886
+              </td>
+            </tr>
+            <tr>
+              <td class="mise_niveau">
+                <p class="colonne1.1">Choufel</p>
+              </td>
+              <td class="mise_niveau">
+                <p class="colonne2.2">1er Sept</p>
+              </td>
+              <td class="mise_niveau">
+                <p class="colonne3.3">589 456</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="mise_niveau">
+                <p class="colonne1.1">CarzyNutzy</p>
+              </td>
+              <td class="mise_niveau">
+                <p class="colonne2.2">1er Sept</p>
+              </td>
+              <td class="mise_niveau">
+                <p class="colonne3.3">158 448</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="mise_niveau">
+                <p class="colonne1.1">Stefantutor</p>
+              </td>
+              <td class="mise_niveau">
+                <p class="colonne2.2">10 août</p>
+              </td>
+              <td class="mise_niveau">
+                <p class="colonne3.3"></p>468 886
+              </td>
+            </tr>
+            <tr>
+              <td class="mise_niveau">
+                <p class="colonne1.1">Choufel</p>
+              </td>
+              <td class="mise_niveau">
+                <p class="colonne2.2">1er Sept</p>
+              </td>
+              <td class="mise_niveau">
+                <p class="colonne3.3">589 456</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="mise_niveau">
+                <p class="colonne1.1">CarzyNutzy</p>
+              </td>
+              <td class="mise_niveau">
+                <p class="colonne2.2">1er Sept</p>
+              </td>
+              <td class="mise_niveau">
+                <p class="colonne3.3">158 448</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="mise_niveau">
+                <p class="colonne1.1">Stefantutor</p>
+              </td>
+              <td class="mise_niveau">
+                <p class="colonne2.2">10 août</p>
+              </td>
+              <td class="mise_niveau">
+                <p class="colonne3.3"></p>468 886
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
       </div>
     </div>

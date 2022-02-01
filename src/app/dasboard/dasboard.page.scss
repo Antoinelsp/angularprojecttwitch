@@ -104,8 +104,9 @@ ion-title{
   height: 800px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: stretch;
+  padding:30px;
 }
 .textfre{
   display: flex;
@@ -117,9 +118,9 @@ ion-title{
 }
 tr{
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin: 0px;
-  align-items: flex-start;
+  align-items: stretch;
 }
 td{
   height: 40px;
@@ -138,6 +139,11 @@ td{
 }
 #ecartact{
   margin-bottom: 15px;
+}
+#ecarafil{
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 700px ;
 }
 .btn_etat_valide{
   height: 12px;
@@ -166,4 +172,11 @@ margin: 0px;
 .texte_ligne3{
   font-size: 18px;
   margin: 0px;
+}
+.ligne_grasse{
+  font-size: 16px;
+  font-weight: 600;
+}
+.mise_niveau{
+  width: 100px;
 }

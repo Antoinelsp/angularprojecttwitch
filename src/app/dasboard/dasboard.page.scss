@@ -1,8 +1,12 @@
 
+ion-content{
+  background-color: #b6b6b6;
+}
 ion-content ion-toolbar{
   padding-right: 5%;
   display: flex;
   justify-content: flex-start;
+  background-color: #b6b6b6 !important;
 }
 ion-content ion-toolbar ion-searchbar{
   width: 350px;

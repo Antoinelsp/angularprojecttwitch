@@ -10,7 +10,7 @@ ion-content ion-toolbar{
   ion-content ion-toolbar ion-searchbar{
   width: 350px;
   margin: 0px;
-  margin-left: 65%;
+  margin-left: 55%;
   margin-top: 5px;
   padding: 0px;
  }
@@ -53,7 +53,7 @@ ion-title{
   margin-top: 40px;
   font-size: 20px;
   margin-bottom: 30px;
-  margin-left: 135px;
+  margin-left: 5%;
 }
 .rubrique{
   display: flex;
@@ -87,11 +87,10 @@ ion-title{
   display: flex;
   flex-direction: column;
 }
-.graphique{
-  border: solid 1px;
-  border-color: blueviolet;
+.photo_graphique{
   width: 550px;
   height: 200px;
+  margin-bottom: 20px;
 }
 .liste_activite{
   width: 550px;
@@ -107,6 +106,7 @@ ion-title{
   justify-content: space-between;
   align-items: stretch;
   padding:30px;
+  overflow-y: scroll;
 }
 .textfre{
   display: flex;

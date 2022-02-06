@@ -5,11 +5,23 @@ ion-content ion-toolbar{
   justify-content: flex-start;
   box-shadow: 10px 5px 5px  #b6b6b6;
 }
-ion-content ion-toolbar ion-searchbar{
+
+  ion-content ion-toolbar ion-searchbar{
   width: 350px;
   margin: 0px;
-  margin-left: 65%;
-}
+  margin-left: 55%;
+  margin-top: 5px;
+  padding: 0px;
+ }
+@media screen and (max-width: 1180px) and (orientation: landscape) {
+  ion-content ion-toolbar ion-searchbar{
+  width: 350px;
+  margin: 0px;
+  margin-left: 250px;
+  margin-top: 5px;
+  padding: 0px;
+} }
+
 ion-content ion-toolbar ion-buttons{
   align-self: flex-start;
 }
@@ -23,6 +35,7 @@ ion-content ion-toolbar ion-buttons ion-button{
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
 ion-title{
   display: flex;
   justify-content: flex-start;
@@ -32,13 +45,16 @@ ion-title{
   padding-right: 1%;
   justify-content: flex-start;
   margin: 0px;
+  align-items: baseline;
 }
-.Dash{
+.stream{
   width: fit-content;
   align-self: flex-start;
   margin: 0px;
-  margin-top: 25px;
+  margin-top: 40px;
   font-size: 20px;
+  margin-bottom: 30px;
+  margin-left: 5%;
 }
 .tri{
   margin-left: 50%;
@@ -61,4 +77,48 @@ ion-title{
 }
 ion-item{
   margin-top: 15px;
+}
+
+.donees{
+  display: flex;
+  justify-content: center;
+}
+
+tr{
+  display: flex;
+  margin: 0px;
+  align-items: baseline;
+}
+td{
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  height: 65px;
+  width: 200px;
+  flex-wrap: wrap;
+}
+
+.ligne_grasse{
+  font-size: 16px;
+  font-weight: 600;
+}
+.ligne_niveau{
+  display: flex;
+  align-self: flex-start; 
+  color: #6441A5;
+  margin: 0px;
+
+}
+.mise_niveau2{
+  width: 110px;
+  margin-right: 10px;
+}
+.mise_niveau3{
+  width: 220px;
+}
+.mise_niveau1{
+  width: 130px;
+}
+.mise_niveau{
+  justify-content: flex-start;
 }

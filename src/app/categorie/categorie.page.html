@@ -2,10 +2,34 @@
   <ion-toolbar>
     <ion-searchbar></ion-searchbar>
     <ion-buttons slot="end">
-      <ion-button><ion-icon name="notifications-outline"></ion-icon></ion-button>
+      <ion-button><ion-icon name="notifications-outline" style="color: white;"></ion-icon></ion-button>
     </ion-buttons>
     <ion-buttons slot="end">
-      <ion-button><ion-icon name="settings-outline"></ion-icon></ion-button>
+      <ion-button><ion-icon name="settings-outline" style="color: white;"></ion-icon></ion-button>
     </ion-buttons>
   </ion-toolbar>
+  <div class="ligne1">
+    <p class="stream">Catégorie</p>
+    <p class="tri">trier par :</p>
+    <ion-item>
+      <ion-select placeholder="Select One">
+        <ion-select-option value="recent">recent</ion-select-option>
+        <ion-select-option value="croissant">croissant</ion-select-option>
+        <ion-select-option value="decroissant">décroissant</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-buttons class="btnadd"><ion-button class="btnadd2" style="color: white;">Ajouter</ion-button></ion-buttons>
+  </div>
+  <div>
+    <div class="ligne2">
+      <div class="colonne1"><ion-img id="imgjeux" src="assets/gaming.svg"></ion-img><p>JEUX</p></div>
+      <div class="colonne2"><ion-img id="imgirl" src="assets/irl.svg"></ion-img><p>IRL</p></div>
+      <div class="colonne3"><ion-img id="imgmusique" src="assets/music.svg"></ion-img><p>MUSIC</p></div>
+    </div>
+    <div class="ligne2">
+      <div class="colonne1"><ion-img id="imgesports" src="assets/esports.svg"></ion-img><p>E-SPORTS</p></div>
+      <div class="colonne2"><ion-img id="imgcreatif" src="assets/creative.svg"></ion-img><p>CREATIVE</p></div>
+     
+    </div>
+  </div>
 </ion-content>

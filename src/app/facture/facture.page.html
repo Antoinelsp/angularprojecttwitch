@@ -2,10 +2,69 @@
   <ion-toolbar>
     <ion-searchbar></ion-searchbar>
     <ion-buttons slot="end">
-      <ion-button><ion-icon name="notifications-outline"></ion-icon></ion-button>
+      <ion-button><ion-icon name="notifications-outline" style="color: white;"></ion-icon></ion-button>
     </ion-buttons>
     <ion-buttons slot="end">
-      <ion-button><ion-icon name="settings-outline"></ion-icon></ion-button>
+      <ion-button><ion-icon name="settings-outline" style="color: white;"></ion-icon></ion-button>
     </ion-buttons>
   </ion-toolbar>
+  <div class="ligne1">
+    <p class="stream">Facture</p>
+    <p class="tri">trier par :</p>
+    <ion-item>
+      <ion-select placeholder="Select One">
+        <ion-select-option value="recent">recent</ion-select-option>
+        <ion-select-option value="croissant">croissant</ion-select-option>
+        <ion-select-option value="decroissant">décroissant</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-buttons class="btnadd"><ion-button class="btnadd2" style="color: white;">Ajouter</ion-button></ion-buttons>
+  </div>
+  <div class="donees">
+    <table >
+      <thead>
+        <tr>
+          <th colspan="5" id="ecarafil"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr  class="ligne_niveau" >
+          <td class="mise_niveau1" >
+            <p class="colonne3_3" class="ligne_grasse">N° Facture</p>
+          </td>
+          <td class="mise_niveau1">
+            <p class="colonne3_3" class="ligne_grasse">Titre Facture</p>
+          </td>
+          <td class="mise_niveau1">
+            <p class="colonne3_3" class="ligne_grasse">Etat De la Facture</p>
+          <td class="mise_niveau1">
+            <p class="colonne4.4" class="ligne_grasse"></p>
+          </td>
+        </tr>
+        <tr *ngFor=" let data of datas">
+          <td class="mise_niveau1">
+            <p class="colonne3_3"> 00{{data.id}}</p>
+          </td>
+          <td class="mise_niveau1">
+            <p class="colonne3_3">{{data.prenom}}</p>
+          </td>
+          <td class="mise_niveau1">
+            <p class="colonne3_3"> <ion-buttons slot="end" class="btn_etat_valide">
+              <ion-button disabled="true"></ion-button>
+            </ion-buttons>{{data.etat2}}</p>
+          </td>
+          <td class="mise_niveau1">
+            <p class="colonne3_3"> 
+              <ion-buttons slot="end" class="boutons_tab">
+                <ion-button><ion-icon  name="eye-outline" style="color: white; background-color: blue;  border-radius: 50%;"></ion-icon></ion-button>
+              </ion-buttons>
+              <ion-buttons slot="end" class="boutons_tab">
+                <ion-button><ion-icon name="trash-outline" style="color: white; background-color: red;  border-radius: 50%;"></ion-icon></ion-button>
+              </ion-buttons>  
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </ion-content>

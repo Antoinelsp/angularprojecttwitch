@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import sampleData from '../../clients.json';
 
 @Component({
   selector: 'app-facture',
@@ -11,5 +12,5 @@ export class FacturePage implements OnInit {
 
   ngOnInit() {
   }
-
+  datas : any = sampleData;
 }
